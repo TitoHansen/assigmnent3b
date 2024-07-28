@@ -1,0 +1,118 @@
+/* Basic styles for the body of the page */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Sets the font for the page */
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Aligns items vertically */
+    align-items: center; /* Centers items horizontally */
+    padding: 40px; /* Adds padding around the page */
+    background-color: #e1f5fe; /* Sets a light blue background color */
+    color: #333; /* Sets the text color */
+}
+
+h1 {
+    font-size: 2em; /* Sets the font size of the title */
+    margin-bottom: 24px; /* Adds margin below the title */
+    color: #ff80ab; /* Sets the color of the title */
+}
+
+form {
+    background: #fff; /* Sets the background color of the form */
+    padding: 24px; /* Adds internal padding to the form */
+    border-radius: 10px; /* Adds rounded corners to the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow to the form */
+    width: 350px; /* Sets the width of the form */
+    box-sizing: border-box; /* Includes padding and border in the total width */
+}
+
+/* Margin between sections */
+.section {
+    margin-bottom: 24px; /* Adds margin below each section */
+}
+
+label {
+    font-weight: bold; /* Sets the font weight to bold */
+    margin-bottom: 8px; /* Adds margin below the label */
+    display: block; /* Makes the label occupy the full width */
+    color: #ff80ab; /* Sets the text color of the label */
+}
+
+input[type="text"], select {
+    width: 100%; /* Sets the width of text inputs and select elements to 100% */
+    padding: 12px; /* Adds internal padding */
+    margin-bottom: 16px; /* Adds margin below text inputs and select elements */
+    border: 1px solid #ccc; /* Sets the border of text inputs and select elements */
+    border-radius: 5px; /* Adds rounded corners */
+    box-sizing: border-box; /* Includes padding and border in the total width */
+    font-size: 16px; /* Sets the font size */
+}
+
+.ingredient-option {
+    display: flex; /* Uses flexbox for layout of ingredients */
+    align-items: center; /* Aligns items vertically */
+    margin-bottom: 8px; /* Adds margin below each ingredient option */
+}
+
+.ingredient-option label {
+    margin: 0; /* Removes margin from ingredient labels */
+    font-weight: 300; /* Sets the font weight to light */
+}
+
+input[type="checkbox"] {
+    margin-right: 8px; /* Adds margin to the right of checkboxes */
+}
+
+button {
+    width: 100%; /* Sets the width of the button to 100% */
+    padding: 12px; /* Adds internal padding to the button */
+    font-size: 16px; /* Sets the font size of the button */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    background-color: #4caf50; /* Sets the background color of the button */
+    color: white; /* Sets the text color of the button */
+    border: none; /* Removes the border of the button */
+    border-radius: 5px; /* Adds rounded corners to the button */
+    transition: background-color 0.3s ease; /* Adds a smooth transition for background color changes */
+    margin-top: 16px; /* Adds margin above the button */
+}
+
+button:hover {
+    background-color: #388e3c; /* Changes the background color of the button on hover */
+}
+
+#order-summary {
+    margin-top: 24px; /* Adds margin above the order summary */
+    background: #fff; /* Sets the background color of the order summary */
+    padding: 24px; /* Adds internal padding to the order summary */
+    border-radius: 10px; /* Adds rounded corners to the order summary */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow to the order summary */
+    width: 350px; /* Sets the width of the order summary */
+    box-sizing: border-box; /* Includes padding and border in the total width */
+    display: none; /* Hides the order summary initially */
+}
+
+#order-summary.visible {
+    display: block; /* Shows the order summary when the 'visible' class is added */
+}
+
+/* Adjusting margins for specific elements */
+#size {
+    margin-top: 8px; /* Adds margin above the size selector */
+    margin-bottom: 8px; /* Adds margin below the size selector */
+}
+
+.ingredients-label {
+    margin-bottom: 16px; /* Adds margin below the ingredients label */
+}
+
+.ingredient-option:last-child {
+    margin-bottom: 16px; /* Adds margin below the last ingredient option */
+}
+
+/* Adjusting the margin for the liquid base selector */
+#base {
+    margin-top: 8px; /* Adds margin above the base selector */
+    margin-bottom: 8px; /* Adds margin below the base selector */
+}
+
+.section:last-of-type {
+    margin-bottom: 0; /* Removes the margin below the last section */
+}

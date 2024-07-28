@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-- Declaration of HTML5 document type -->
+<html lang="en"> <!-- Sets the language of the page to English -->
+<head>
+    <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the viewport for responsive design -->
+    <title>Smoothie Order Form</title> <!-- Sets the title of the page, which appears in the browser tab -->
+    <link rel="stylesheet" href="styles.css"> <!-- Links the CSS stylesheet -->
+</head>
+<body>
+    <h1>Smoothie Order Form</h1> <!-- Main header of the page -->
+    <form id="smoothie-form"> <!-- Start of the form with ID smoothie-form -->
+        <div class="section"> <!-- Section of the form for the name -->
+            <label for="name">Name:</label> <!-- Label for the name field -->
+            <input type="text" id="name" name="name" required> <!-- Text input field for the name, required -->
+        </div>
+        
+        <div class="section"> <!-- Section of the form for the size -->
+            <label for="size">Size:</label> <!-- Label for the size selector -->
+            <select id="size" name="size" required> <!-- Size selector, required -->
+                <option value="small">Small</option> <!-- Option for small size -->
+                <option value="medium">Medium</option> <!-- Option for medium size -->
+                <option value="large">Large</option> <!-- Option for large size -->
+            </select>
+        </div>
+
+        <div class="section"> <!-- Section of the form for ingredients -->
+            <label class="ingredients-label">Ingredients:</label> <!-- Label for the ingredients -->
+            <div class="ingredient-option"> <!-- Ingredient option -->
+                <input type="checkbox" id="banana" name="ingredients" value="Banana"> <!-- Checkbox for banana -->
+                <label for="banana">Banana</label> <!-- Label for the banana checkbox -->
+            </div>
+            <div class="ingredient-option"> <!-- Ingredient option -->
+                <input type="checkbox" id="strawberry" name="ingredients" value="Strawberry"> <!-- Checkbox for strawberry -->
+                <label for="strawberry">Strawberry</label> <!-- Label for the strawberry checkbox -->
+            </div>
+            <div class="ingredient-option"> <!-- Ingredient option -->
+                <input type="checkbox" id="mango" name="ingredients" value="Mango"> <!-- Checkbox for mango -->
+                <label for="mango">Mango</label> <!-- Label for the mango checkbox -->
+            </div>
+            <div class="ingredient-option"> <!-- Ingredient option -->
+                <input type="checkbox" id="spinach" name="ingredients" value="Spinach"> <!-- Checkbox for spinach -->
+                <label for="spinach">Spinach</label> <!-- Label for the spinach checkbox -->
+            </div>
+            <div class="ingredient-option"> <!-- Ingredient option -->
+                <input type="checkbox" id="chia" name="ingredients" value="Chia"> <!-- Checkbox for chia -->
+                <label for="chia">Chia</label> <!-- Label for the chia checkbox -->
+            </div>
+        </div>
+
+        <div class="section"> <!-- Section of the form for the liquid base -->
+            <label for="base">Liquid Base:</label> <!-- Label for the liquid base selector -->
+            <select id="base" name="base" required> <!-- Liquid base selector, required -->
+                <option value="water">Water</option> <!-- Option for water -->
+                <option value="milk">Milk</option> <!-- Option for milk -->
+                <option value="juice">Juice</option> <!-- Option for juice -->
+            </select>
+        </div>
+
+        <div class="section"> <!-- Section of the form for the order button -->
+            <button type="button" id="order-button">Order</button> <!-- Button to submit the order -->
+        </div>
+    </form>
+    <div id="order-summary"></div> <!-- Div to display the order summary -->
+    <script src="script.js"></script> <!-- Links the JavaScript script -->
+</body>
+</html>
